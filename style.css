@@ -158,11 +158,30 @@ h3{
 #Portfolio{
     background-color: rgb(25, 25, 44);
 }
-#Contact{/*
-    background-color: rgb(37, 37, 70);*/
+#Contact{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('resources/background2.jpg');
     background-size: cover;
     background-position: center;
+    
+}
+#form-sec{
+    display: flex;
+    gap: 10px;
+}
+#sbt-btn{
+    color: aliceblue;
+    background-color: black;
+    border: 1px solid black;
+    text-align: right;
+    padding: 10px 20px;
+    margin: 10px;
+    transition: 0.5s all ease;
+
+
+}
+#sbt-btn:hover{
+    color: rgb(212, 23, 55);
+    box-shadow: 0 0 0 1px rgb(212, 23, 55);
 }
 .Services-icons{
     width: 100px;
@@ -179,13 +198,15 @@ h3{
     opacity: 0.5;
     border-radius: 5px;
     max-width: 250px;
-    height: 150px;
+    height: 200px;
+    width: 250px;
+    overflow: hidden;
     margin: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 50px;
+    padding: 5px 30px;
 }
 .contentBX:hover{
     box-shadow: 0 0 0 2px rgb(209, 37, 66);
@@ -332,6 +353,10 @@ h3{
         border-radius: 5px;
         box-shadow: 0 0 50px;
     
+    }
+    #form-sec{
+        display: flex;
+        flex-direction: column;
     }
     .ftr-container{
         display: flex;
