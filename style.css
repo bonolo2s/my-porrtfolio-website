@@ -99,7 +99,6 @@ h3{
     margin: 10px 0;
 }
 #scroll-btn{
-    padding: 0 5%;
     text-align: center;
 }
 #scroll-btn a {
@@ -213,11 +212,14 @@ h3{
     opacity: 1;
 }
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    column-gap: 20px;
+    row-gap: 15px;
     justify-content: center;
-    gap: 10px;
-    padding: 10px;
+    margin: auto;
+    padding: 10px 0;
+
 }
 .card{
     background-color: rgb(57, 65, 65);
@@ -379,6 +381,11 @@ h3{
         box-shadow: 0 0 50px;
     
     }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,90%);
+        column-gap: 0;
+    }
     #form-sec{
         display: flex;
         flex-direction: column;
@@ -392,6 +399,24 @@ h3{
         margin: 15px 0;
     }
 }
+
+@media (min-width :1400px){
+    #Home,#About, #Services,#Portfolio,#Contact,.header{
+        padding: 0 10%;
+    }
+    .header{
+        width: 65%;
+    }
+    #scroll-btn{
+        margin-top: 20%;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,45%);
+        column-gap: 0;
+    }
+}
+
 
 /*key frames*/
 @keyframes zoomIn{
