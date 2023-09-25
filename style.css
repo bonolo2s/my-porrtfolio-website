@@ -114,14 +114,15 @@ h3{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    padding: 5%;
 }
 .about-me{
     display: flex;
     margin: auto;
-    width: 80%;
+    width: 90%;
 }
 #My-img{
-    width: 80%;
+    width: 65%;
     align-self: center;
     border-radius: 5px;
     box-shadow: 0 0 50px;
@@ -213,9 +214,8 @@ h3{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(2,45%);
-    column-gap: 20px;
-    row-gap: 15px;
+    grid-template-columns: repeat(3,30%);
+    gap: 20px;
     justify-content: center;
     margin: auto;
     padding: 10px 0;
@@ -303,24 +303,7 @@ h3{
 }
 
 /*Making our page Responsive*/
-@media (max-width :900px) {
-    .about-me{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 80%;
-        padding: 10px 0;
-    }
-    #My-img{
-        width: 70%;
-        align-self: center;
-        border-radius: 5px;
-        box-shadow: 0 0 50px;
-    
-    }
 
-
-}
 @media (max-width :600px){
     .hero ul li{
         display: block;
@@ -397,6 +380,27 @@ h3{
     }
     .socials{
         margin: 15px 0;
+    }
+}
+
+@media (max-width :900px) {
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 80%;
+        padding: 10px 0;
+    }
+    #My-img{
+        width: 70%;
+        align-self: center;
+        border-radius: 5px;
+        box-shadow: 0 0 50px;
+    
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
     }
 }
 
