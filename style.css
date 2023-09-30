@@ -418,6 +418,9 @@ h3{
         grid-template-columns: repeat(3,45%);
         column-gap: 0;
     }
+    .about-me{
+        flex-direction: row;
+    }
 }
 
 
