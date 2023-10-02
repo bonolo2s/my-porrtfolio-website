@@ -268,14 +268,16 @@ h3{
     transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
 }
 .hidden-content .text{
-    color: blue;
+    color: rgb(40, 119, 209);
+    font-weight: bold;
+    font-style: italic;
     padding-top: 100px;
     font-family: 'DM Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
 
 }
 .card-img:hover>.hidden-content{
-    opacity: 0.8;
+    opacity: 0.9;
     transform: scaleY(1);
 }
 .card-btn{
@@ -392,7 +394,6 @@ h3{
         padding: 0;
     }
     #form{
-        background-color: aqua;
         width: 80%;
     }
     .ftr-container{
