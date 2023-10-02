@@ -345,6 +345,7 @@ h3{
     }
     #Home{
         padding: 15% 0;
+        width: 100%;
     }
     .menuIcon-container{
         display: block;
