@@ -175,7 +175,6 @@ h3{
 .reviews-card-link{
     text-decoration: none;
     transition: 0.5s all ease;
-
 }
 .reviews-card-link:hover{
     font-size: large;
