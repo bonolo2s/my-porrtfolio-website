@@ -167,6 +167,18 @@ h3{
 }
 #Portfolio{
     background-color: rgb(25, 25, 44);
+    padding: 5% 5% ;
+}
+#Reviews{
+    text-align: center;
+}
+.reviews-card-link{
+    text-decoration: none;
+    transition: 0.5s all ease;
+
+}
+.reviews-card-link:hover{
+    font-size: large;
 }
 #Contact{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('resources/background2.jpg');
@@ -226,6 +238,7 @@ h3{
     box-shadow: 0 0 0 2px rgb(209, 37, 66);
     opacity: 1;
 }
+/*Grid section*/
 .container{
     display: grid;
     grid-template-columns: repeat(1,100%);
@@ -366,7 +379,7 @@ h3{
         display: flex;*/
         justify-content: center;
     }
-    #About,#Portfolio,#Contact{
+    #About,#Services,#Portfolio,#Contact{
         padding-top: 15%;
     }
     .about-me{
@@ -386,6 +399,9 @@ h3{
     #form-sec{
         display: flex;
         flex-direction: column;
+    }
+    #Reviews{
+        padding-top: 15%;
     }
     .Contact{
         display: flex;
@@ -426,10 +442,16 @@ h3{
         display: grid;
         grid-template-columns: repeat(2,45%);
     }
+    #Reviews{
+        padding-top: 10%;
+    }
 }
 @media (min-width :1200px){
     .about-me{
         flex-direction: row;
+    }
+    #about{
+        padding-top: 15%;
     }
     .container{
         display: grid;
@@ -443,6 +465,9 @@ h3{
     }
     .container:hover {
         box-shadow: 0px 0px 30px 10px rgba(82, 185, 185, 0.5);
+    }
+    #Reviews{
+        padding-top: 3%;
     }
     }
 @media (min-width :1400px){
