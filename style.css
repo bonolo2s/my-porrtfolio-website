@@ -12,7 +12,7 @@ body{
 }
 .hero{
     position: relative;
-    background-image: url('resources/background1.jpg');
+    background-image: url('resources/background1.webp');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;  
@@ -160,7 +160,7 @@ h3{
 }
 #Services{
     background-color: rgb(25, 25, 44);
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('resources/background3.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('resources/background3.webp');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;    
@@ -180,7 +180,7 @@ h3{
     font-size: large;
 }
 #Contact{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('resources/background2.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('resources/background2.webp');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
