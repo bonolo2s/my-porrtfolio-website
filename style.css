@@ -208,9 +208,6 @@ h3{
     color: rgb(212, 23, 55);
     box-shadow: 0 0 0 1px rgb(212, 23, 55);
 }
-.Services-icons{
-    width: 100px;
-}
 .content{
     display: flex;
     justify-content: center;
@@ -258,12 +255,6 @@ h3{
 .card:hover{
     transform: translateY(-5px);
     box-shadow: 10px 0 10px rgb(65, 124, 179);
-}
-.card-Img{
-    width: 100%;
-    height: auto;
-    
-    
 }
 .hidden-content{
     background-color: white;
