@@ -6,7 +6,7 @@
         <title>Customer Testimonials | Bonolo Selowa</title>
         <meta name="description" content="Explore authentic client reviews for Bonolo Selowa. Discover how Bonolo Selowa's freelance services have positively impacted businesses. Read testimonials and feedback now.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image" href="imgs/fav.png">
+        <link rel="icon" type="image/x-icon" href="resources/5009078.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -44,22 +44,113 @@
                 width: 60vh;
                 height: 60vh;
             }
+            .container{
+                position: relative;
+            }
+            .wrapper{
+                width: 50vw;
+                height: 70vh;
+                box-shadow: 10px 10px 10px 10px gray;
+                margin: auto;
+                overflow: hidden;
+            }
+            .wrapper-container{
+                display: grid;
+                grid-template-columns: repeat(3,100%);
+                height: 100%;
+                width: 100%;
+                animation: slider 12s ease-in-out infinite;
+                
+            }
+            .wrapper-container #slide-img-1{
+                background-image: url(resources/Gift-website.webp);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .wrapper-container #slide-img-2{
+                background-image: url(resources/Gifts\ side\ before.png);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .wrapper-container #slide-img-3{
+                background-image: url(resources/Gifts\ side\ after.png);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .container .btn-container .btn{
+                background-color: black;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                display: inline-block;
+                margin: 10px
+            }
+            .btn:hover{
+                box-shadow: 0px 0px 7px 7px rgb(89, 147, 199);
+            }
+            .btn-container{
+                position: absolute;
+                left: 45%;
+                bottom: 0;
+            }
+            @keyframes slider{
+                0% { transform: translateX(0%); }
+                33% { transform: translateX(-100%); }
+                66% { transform: translateX(-200%); }
+                99% { transform: translateX(-300%); }
+
+            }
+            /*for Responsiveness Purposes*/
+
             @media (max-width: 600px) {
-                img{
-                    width: 45vh;
-                    height: 45vh;
+                .wrapper{
+                width: 100%;
+                height: 70vh;
+                }
+            }
+            @media (min-width: 768px) {
+                .wrapper{
+                width: 70vw;
+                height: 60vh;
+                }
+            }
+            @media (min-width: 1200px) {
+                .wrapper{
+                width: 50vw;
+                height: 50vh;
+                }
+            }
+            @media (min-width: 1400px) {
+                .wrapper{
+                width: 45vw;
+                height: 55vh;
                 }
             }
         </style>
     </head>
     <body>
         <!--Service offered-->
-        <div style="text-align: center;padding: 5% 0">
-            <div style="line-height: 1;margin: 40px 0;">            
-                <h1 style="font-size: 50px;font-weight: 100;">Professional Web Application</h1>
-                <h1 style="font-size: 50px;font-weight: 100;">Development Service</h1>
+        <div style="text-align: center;padding: 3% 0;">
+            <div style="line-height: 1;margin: 10px 0;">            
+                <h1 style="font-size: 4rem;font-weight: 100;">Professional Web Application</h1>
+                <h1 style="font-size: 4rem;font-weight: 100;">Development Service</h1>
             </div>
-            <img src="resources/Gift-website.webp" alt="client-preview-site" width="100%" height="auto" >
+        </div>
+
+        <!--Img slider-->
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-container">
+                    <div id="slide-img-1" style="text-align: center;"><p style="font-size: 25px;">Client's website</p></div>
+                    <div id="slide-img-2"  style="text-align: center;"><p style="font-size: 25px;">Before SEO and Speed Optimization</p></div>
+                    <div id="slide-img-3"  style="text-align: center;"><p style="font-size: 25px;">After SEO and Speed Optimization</p></div>
+                </div>
+            </div>
+            <!--<div class="btn-container">
+                <a href="#slide-img-1" class="btn"></a>
+                <a href="#slide-img-2" class="btn"></a>
+                <a href="#slide-img-3" class="btn"></a>
+            </div>-->
         </div>
      
         <!--In depth client review-->
@@ -113,7 +204,6 @@
                 <li style="font-size: 20px;"><span><i class="bi bi-arrow-right-circle" style="font-size: 25px;color: green;"></i></span>Cross-platform compatibility</li>
                 <li style="font-size: 20px;"><span><i class="bi bi-arrow-right-circle" style="font-size: 25px;color: green;"></i></span>Efficient functionality</li>
                 <li style="font-size: 20px;"><span><i class="bi bi-arrow-right-circle" style="font-size: 25px;color: green;"></i></span>SEO and Speed Optimization</li>
-                <li style="font-size: 20px;"><span><i class="bi bi-arrow-right-circle" style="font-size: 25px;color: green;"></i></span>Effecient functionality</li>
                 <li style="font-size: 20px;"><span><i class="bi bi-arrow-right-circle" style="font-size: 25px;color: green;"></i></span>Resposnive Web pages</li>
             </ul>
             <br>
