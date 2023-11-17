@@ -14,7 +14,7 @@ menuIcon.addEventListener('click',function(){
   navbar.classList.toggle('active')
 })
 
- const navlinks = document.querySelectorAll('.navLinks')
+const navlinks = document.querySelectorAll('.navLinks')
 function active(){
   navlinks.forEach((i) =>
   i.classList.remove('active'));
@@ -23,3 +23,4 @@ function active(){
 
 navlinks.forEach((i) =>
 i.addEventListener('click',active))
+
