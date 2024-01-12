@@ -8,6 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="resources/5009078.png">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
             *{
@@ -38,95 +42,56 @@
                 font-size: 20px;
                 text-decoration: none;
                 transition: 0.5s all ease;
-                color: black;
+                color: rgb(17, 120, 218);
             }
-            a:hover>p{
+            a:hover{
                 color: rgb(212, 23, 55);
             }
             img{
                 width: 60vh;
                 height: 60vh;
             }
-            .container{
-                position: relative;
-            }
-            .wrapper{
-                width: 50vw;
-                height: 70vh;
-                box-shadow: 10px 10px 10px 10px gray;
-                margin: auto;
-                overflow: hidden;
-            }
-            .wrapper-container{
-                display: grid;
-                grid-template-columns: repeat(3,100%);
-                height: 100%;
-                width: 100%;
-                animation: slider 12s ease-in-out infinite;
-                
-            }
-            .wrapper-container #slide-img-1{
-                background-image: url(resources/Gift-website.webp);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .wrapper-container #slide-img-2{
-                background-image: url(resources/Gifts\ side\ before.webp);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .wrapper-container #slide-img-3{
-                background-image: url(resources/Gifts\ side\ after.webp);
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-            .container .btn-container .btn{
-                background-color: black;
-                width: 15px;
-                height: 15px;
-                border-radius: 50%;
-                display: inline-block;
-                margin: 10px
-            }
-            .btn:hover{
-                box-shadow: 0px 0px 7px 7px rgb(89, 147, 199);
-            }
-            .btn-container{
-                position: absolute;
-                left: 45%;
-                bottom: 0;
-            }
-            @keyframes slider{
-                0% { transform: translateX(0%); }
-                33% { transform: translateX(-100%); }
-                66% { transform: translateX(-200%); }
-                99% { transform: translateX(-300%); }
 
-            }
+            .swiper {
+                width: 450px;
+                height: 450px;
+                background-color:rgba(12, 12, 31, 0.774);
+                margin: 50px auto;
+                box-shadow: 10px 10px 10px 10px rgb(22, 22, 22);
+                }
+
             /*for Responsiveness Purposes*/
 
             @media (max-width: 600px) {
-                .wrapper{
-                width: 100%;
-                height: 70vh;
+                .swiper {
+                width: 95%;
+                height: 45vh;
+                background-color: rgba(12, 12, 31, 0.774);
+                margin: 50px auto;
                 }
             }
             @media (min-width: 768px) {
-                .wrapper{
+                .swiper {
                 width: 70vw;
-                height: 60vh;
+                height: 45vh;
+                background-color: rgba(12, 12, 31, 0.774);
+                margin: 50px auto;
                 }
             }
             @media (min-width: 1200px) {
-                .wrapper{
-                width: 50vw;
-                height: 65vh;
+                .swiper {
+                width: 35vw;
+                height: 60vh;
+                background-color: rgba(12, 12, 31, 0.774);
+                margin: 50px auto;
                 }
             }
             @media (min-width: 1400px) {
-                .wrapper{
-                width: 45vw;
-                height: 55vh;
+                .swiper {
+                width: 35vw;
+                height: 60vh;
+                background-color: rgba(12, 12, 31, 0.774);
+                margin: 50px auto;
                 }
             }
         </style>
@@ -135,27 +100,25 @@
         <!--navigation bar-->
 
         <!--Service offered-->
-        <div style="text-align: center;padding: 3% 0;">
-            <div style="line-height: 1;margin: 10px 0;">            
-                <h1 style="font-size: 4rem;font-weight: 100;color: white;">Professional Web </h1>
-                <h1 style="font-size: 4rem;font-weight: 100;color: white;">Development Service</h1>
-            </div>
-        </div>
 
-        <!--Img slider-->
-        <div class="container">
-            <div class="wrapper">
-                <div class="wrapper-container">
-                    <div id="slide-img-1" style="text-align: center;"><p style="font-size: 25px;">Client's website</p></div>
-                    <div id="slide-img-2"  style="text-align: center;"><p style="font-size: 25px;">Before SEO and Speed Optimization</p></div>
-                    <div id="slide-img-3"  style="text-align: center;"><p style="font-size: 25px;">After SEO and Speed Optimization</p></div>
-                </div>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" style="background-image: url(resources/Gift-website.webp);background-size: cover;" ></div>
+              <div class="swiper-slide" style="background-image: url(resources/Gifts\ side\ before.webp);;background-size: cover;" ></div>
+              <div class="swiper-slide" style="background-image: url(resources/Gifts\ side\ after.webp);;background-size: cover;" ></div>
+              ...
             </div>
-            <!--<div class="btn-container">
-                <a href="#slide-img-1" class="btn"></a>
-                <a href="#slide-img-2" class="btn"></a>
-                <a href="#slide-img-3" class="btn"></a>
-            </div>-->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
         </div>
      
         <!--In depth client review-->
@@ -212,10 +175,34 @@
                 <li style="font-size: 20px;color: white;"><span><i class="bi bi-arrow-right-circle" style="font-size: 25px;color: rgb(0, 0, 0);"></i></span>Resposnive Web pages</li>
             </ul>
             <br>
-            <a href="index.html#Contact"><p>Got a design? I'm Bonolo, your partner in turning your vision into digital reality.Ready
-                to start? Click me ! and lets embark on this digital journey together.</p></a>  
+            <a href="index.html#Contact">Got a design? I'm Bonolo, your partner in turning your vision into digital reality.Ready
+                to start? Click me ! and lets embark on this digital journey together.</a>  
         </div>
 
         <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            //Optional parameters
+            
+            //loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            });
+        </script>
     </body>
 </html>
